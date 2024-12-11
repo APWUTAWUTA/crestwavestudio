@@ -4,7 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crestwave Studio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        section {
+            padding: 3rem 1rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        .services, .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .service, .portfolio-item {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .service:hover, .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -33,39 +115,25 @@
             </div>
             <div class="service">
                 <h3>CAC Registration</h3>
-                <p>Legal registration services for businesses in Nigeria.</p>
+                <p>Legal registration of business under CAC.</p>
             </div>
             <div class="service">
-                <h3>Digital Branding & Online Presence</h3>
-                <p>Comprehensive strategies to establish and strengthen your online presence.</p>
+                <h3>Testimonials</h3>
+                <p>"Crestwave Studio transformed our brand! Their creativity and professionalism are unmatched." - Client A</p>
+                <p>"The team at Crestwave Studio delivered a stunning website that exceeded our expectations." - Client B</p>
+            </div>
+            <div class="service">
+                <h3>Why Choose Us?</h3>
+                <p>At Crestwave Studio, we prioritize your vision and work closely with you to bring it to life. Our dedicated team ensures that every project is tailored to meet your unique needs.</p>
+            </div>
+            <div class="service">
+                <h3>Get Started Today!</h3>
+                <p>Contact us now to discuss your project and see how we can help you succeed!</p>
             </div>
         </div>
-    </section>
-    <section id="portfolio">
-        <h2>Our Portfolio</h2>
-        <div class="portfolio">
-            <div class="portfolio-item">
-                <h3>Logo Design</h3>
-                <p>Designed logos that reflect innovation and creativity.</p>
-            </div>
-            <div class="portfolio-item">
-                <h3>Web Design</h3>
-                <p>Developed websites that increased client engagement and sales.</p>
-            </div>
-            <div class="portfolio-item">
-                <h3>Graphic Design</h3>
-                <p>Created promotional materials that boosted visibility.</p>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: crestwavestudio@gmail.com</p>
-        <p>Phone: 07068272561</p>
-        <p>Social Media: @CWS</p>
     </section>
     <footer>
-        <p>&copy; 2024 Crestwave Studio. All rights reserved.</p>
+        <p>&copy; 2023 Crestwave Studio. All rights reserved.</p>
     </footer>
 </body>
 </html>
