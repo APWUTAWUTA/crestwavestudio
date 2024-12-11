@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crestwave Studio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #000; /* Change background to black */
+            color: #fff; /* Change text color to white for contrast */
+            background-image: url('path/to/graffiti-background.jpg'); /* Add graffiti background */
+            background-size: cover; /* Cover the entire background */
         }
         header {
-            background-color: #007BFF;
+            background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent header */
             color: #fff;
             padding: 2rem 0;
             text-align: center;
@@ -23,6 +25,11 @@
         header h1 {
             margin: 0;
             font-size: 2.5rem;
+        }
+        header .logo {
+            font-family: 'Orbitron', sans-serif; /* Special font for logo */
+            font-size: 3rem; /* Larger font size for logo */
+            color: #FFD700; /* Gold color for logo */
         }
         header p {
             font-size: 1.2rem;
@@ -47,6 +54,9 @@
             padding: 3rem 1rem;
             max-width: 1200px;
             margin: auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+            border-radius: 10px; /* Rounded corners for floating effect */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for floating effect */
         }
         h2 {
             text-align: center;
@@ -90,6 +100,7 @@
 </head>
 <body>
     <header>
+        <div class="logo">CWS</div> <!-- Logo with special font -->
         <h1>Welcome to Crestwave Studio</h1>
         <p>Your Partner in Branding and Digital Solutions</p>
     </header>
@@ -119,8 +130,8 @@
             </div>
             <div class="service">
                 <h3>Testimonials</h3>
-                <p>"Crestwave Studio transformed our brand! Their creativity and professionalism are unmatched." - Client A</p>
-                <p>"The team at Crestwave Studio delivered a stunning website that exceeded our expectations." - Client B</p>
+                <p>"Crestwave Studio transformed our brand! Their creativity and professionalism are unmatched." - Dominion Grills and Kitchen</p>
+                <p>"The team at Crestwave Studio delivered a stunning website that exceeded our expectations." - Goldengate Media</p>
             </div>
             <div class="service">
                 <h3>Why Choose Us?</h3>
