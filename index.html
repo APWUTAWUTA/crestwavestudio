@@ -66,6 +66,9 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
+            background-color: #f8f9fa; /* New appealing background color for services */
+            padding: 2rem; /* Added padding for better spacing */
+            border-radius: 8px; /* Rounded corners */
         }
         .service {
             background: #fff;
@@ -73,6 +76,10 @@
             border-radius: 8px; /* Added border radius for a softer look */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
             transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+            color: black; /* Change font color to black */
+        }
+        .service h3 {
+            color: black; /* Change service title color to black */
         }
         .service:hover {
             transform: translateY(-5px); /* Hover effect */
