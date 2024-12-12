@@ -11,9 +11,8 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000; /* Change background to black */
+            background: linear-gradient(135deg, #1a1a1a, #4d4d4d); /* Gradient background */
             color: #fff; /* Change text color to white for contrast */
-            background-image: url('path/to/graffiti-background.jpg'); /* Add graffiti background */
             background-size: cover; /* Cover the entire background */
         }
         header {
@@ -22,6 +21,7 @@
             color: #fff;
             padding: 2rem 0;
             text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
         }
         header h1 {
             margin: 0;
@@ -38,8 +38,9 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #0056b3;
+            background-color: rgba(0, 86, 179, 0.8); /* Semi-transparent background */
             padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
         }
         nav a {
             color: #fff;
@@ -55,35 +56,35 @@
             padding: 3rem 1rem;
             max-width: 1200px;
             margin: auto;
-            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+            background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+            border-radius: 10px; /* Rounded corners */
+            backdrop-filter: blur(10px); /* Blur effect for background */
         }
         h2 {
             text-align: center;
             margin-bottom: 2rem;
             font-size: 2.5rem; /* Increased font size */
         }
-        .services {
+        .services, .portfolio {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            background-color: #f8f9fa; /* New appealing background color for services */
             padding: 2rem; /* Added padding for better spacing */
-            border-radius: 8px; /* Rounded corners */
         }
-        .service {
-            background: #fff;
+        .service, .portfolio-item {
+            background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
             padding: 2rem;
-            border-radius: 8px; /* Added border radius for a softer look */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+            border-radius: 10px; /* Added border radius for a softer look */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
             transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
             color: black; /* Change font color to black */
         }
-        .service h3 {
-            color: black; /* Change service title color to black */
+        .service h3, .portfolio-item h3 {
+            color: #FFD700; /* Change service title color to gold */
         }
-        .service:hover {
-            transform: translateY(-5px); /* Hover effect */
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+        .service:hover, .portfolio-item:hover {
+            transform: translateY(-10px); /* Hover effect */
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
         }
         footer {
             background-color: #333;
@@ -162,6 +163,29 @@
                 <a href="#contact" class="cta-button">Contact Us</a> <!-- Call-to-action button -->
             </div>
         </div>
+    </section>
+    <section id="portfolio">
+        <h2 style="color: #fff; text-align: center;">Our Futuristic Portfolio</h2>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <h3>AI-Powered Platform</h3>
+                <p>Designed a platform utilizing machine learning to streamline processes.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Space Exploration Design</h3>
+                <p>Conceptualized user interfaces for space navigation tools.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Neon Lighting Project</h3>
+                <p>Created immersive neon experiences for a modern art exhibition.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:crestwavestudio@gmail.com">crestwavestudio@gmail.com</a></p>
+        <p>Phone: 07068272561</p>
+        <p>Social Media: <a href="https://twitter.com/cws" target="_blank">@CWS</a></p>
     </section>
     <footer>
         <p>&copy; 2023 Crestwave Studio. All rights reserved.</p>
