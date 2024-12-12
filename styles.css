@@ -1,134 +1,93 @@
 /* Global Styles */
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --background-color: #212121;
+  --text-color: #03A9F4;
+  --accent-color: #FFC107;
+}
+
 body {
-    font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #1a1a2e, #16213e); /* Dark gradient background */
-    color: #e6e6e6; /* Light text color for contrast */
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background: var(--background-color);
+  color: var(--text-color);
 }
 
 /* Header */
-header {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-    color: #00ffcc; /* Neon turquoise text color */
-    padding: 2rem;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    border-bottom: 2px solid #00ffcc;
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--text-color);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid var(--text-color);
+  animation: pulse 2s infinite;
 }
 
-header h1 {
-    font-size: 3rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin: 0;
+.header h1 {
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 /* Navigation */
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #222;
-    padding: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-nav a {
-    color: #e6e6e6;
-    text-decoration: none;
-    margin: 0 1.5rem;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s ease, transform 0.3s ease;
+.nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-nav a:hover, nav a:focus {
-    color: #00ffcc; /* Neon hover effect */
-    transform: translateY(-3px); /* Subtle hover animation */
-    text-decoration: underline;
+.nav a:hover, .nav a:focus {
+  color: var(--accent-color);
+  transform: translateY(-3px);
+  text-decoration: underline;
 }
 
 /* Section Styling */
-section {
-    padding: 4rem 2rem;
-    background-color: rgba(255, 255, 255, 0.05); /* Slight transparent white background */
-    border-radius: 15px;
-    margin-top: 3rem;
+.section {
+  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  margin-top: 3rem;
+  animation: spin 2s infinite;
 }
 
 /* Services Grid */
 .services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
 }
 
 /* Individual Service Card */
 .service {
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 255, 204, 0.2); /* Glowing effect */
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 255, 204, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service:hover {
-    transform: translateY(-10px); /* Hover lift effect */
-    box-shadow: 0 6px 30px rgba(0, 255, 204, 0.4); /* Glowing hover effect */
+  transform: translateY(-10px);
+  box-shadow: 0 6px 30px rgba(0, 255, 204, 0.4);
 }
 
 .service h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    color: #00ffcc;
-}
-
-.service p {
-    font-size: 1rem;
-    color: #ccc;
-}
-
-/* Footer */
-footer {
-    background-color: #111;
-    color: #00ffcc; /* Neon color */
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 3rem;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    border-top: 2px solid #00ffcc;
-}
-
-footer a {
-    color: #00ffcc;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #fff; /* Hover effect for links */
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        margin: 0.5rem 0;
-    }
-
-    .services {
-        grid-template-columns: 1fr;
-    }
-}
+  font-size: 1.6rem;
+  margin-bottom: 
